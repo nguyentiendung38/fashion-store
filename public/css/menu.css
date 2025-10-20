@@ -1,0 +1,16 @@
+/* --- Header custom style --- */
+
+/* Style cho link active trên mobile */
+.mobile-nav-link.active-link {
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+    --tw-gradient-from: #fdf2f8;
+    /* pink-50 */
+    --tw-gradient-to: #f5f3ff;
+    /* purple-50 */
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.mobile-nav-link.active-link span {
+    color: #db2777;
+    /* pink-600 */
+}
