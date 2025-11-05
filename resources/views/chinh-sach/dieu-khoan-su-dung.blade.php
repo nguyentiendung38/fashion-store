@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 {{-- Đặt tiêu đề cho trang --}}
-@section('title', 'Điều Khoản Sử Dụng - LadyFashion')
+@section('title', 'Điều Khoản Sử Dụng - Lynlydesign Fashion')
 
 {{-- Bắt đầu phần nội dung chính của trang --}}
 @section('content')
@@ -69,7 +69,7 @@
                 <div class="pl-16">
                     <div class="bg-slate-50 rounded-2xl p-6 border-2 border-slate-200">
                         <p class="text-slate-700 leading-relaxed mb-4">
-                            Bằng việc truy cập và sử dụng trang web <strong class="text-slate-900">ladyfashion.vn</strong>, bạn đồng ý tuân thủ và bị ràng buộc bởi các điều khoản và điều kiện được nêu trong tài liệu này.
+                            Bằng việc truy cập và sử dụng trang web <strong class="text-slate-900">Lynlydesign fashion.vn</strong>, bạn đồng ý tuân thủ và bị ràng buộc bởi các điều khoản và điều kiện được nêu trong tài liệu này.
                         </p>
                         <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg mt-4">
                             <div class="flex items-start gap-3">
@@ -96,7 +96,7 @@
                 </div>
                 <div class="pl-16">
                     <p class="text-slate-700 leading-relaxed mb-6">
-                        Khi tạo tài khoản tại LadyFashion, bạn cam kết và chịu trách nhiệm về các điều sau:
+                        Khi tạo tài khoản tại Lynlydesign Fashion, bạn cam kết và chịu trách nhiệm về các điều sau:
                     </p>
 
                     <div class="space-y-4">
@@ -160,9 +160,9 @@
                                 <i class="fas fa-copyright text-white text-xl"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-purple-900 mb-2">Bản quyền thuộc về LadyFashion</h4>
+                                <h4 class="font-bold text-purple-900 mb-2">Bản quyền thuộc về Lynlydesign Fashion</h4>
                                 <p class="text-purple-800 leading-relaxed">
-                                    Tất cả nội dung trên trang web này là tài sản của LadyFashion và được bảo vệ bởi luật sở hữu trí tuệ của Việt Nam và quốc tế.
+                                    Tất cả nội dung trên trang web này là tài sản của Lynlydesign Fashion và được bảo vệ bởi luật sở hữu trí tuệ của Việt Nam và quốc tế.
                                 </p>
                             </div>
                         </div>
@@ -202,7 +202,7 @@
                             <i class="fas fa-trademark text-purple-600 text-xl mt-1"></i>
                             <div>
                                 <h5 class="font-semibold text-slate-900 mb-1">Nhãn hiệu</h5>
-                                <p class="text-sm text-slate-600">Logo, tên thương hiệu LadyFashion</p>
+                                <p class="text-sm text-slate-600">Logo, tên thương hiệu Lynlydesign Fashion</p>
                             </div>
                         </div>
                     </div>
@@ -213,7 +213,7 @@
                             <div>
                                 <h5 class="font-bold text-red-900 mb-2">Nghiêm cấm</h5>
                                 <p class="text-red-800 text-sm">
-                                    Mọi hành vi sao chép, phân phối, sửa đổi hoặc sử dụng lại nội dung mà không có sự cho phép bằng văn bản từ LadyFashion đều bị nghiêm cấm và có thể bị xử lý theo pháp luật.
+                                    Mọi hành vi sao chép, phân phối, sửa đổi hoặc sử dụng lại nội dung mà không có sự cho phép bằng văn bản từ Lynlydesign Fashion đều bị nghiêm cấm và có thể bị xử lý theo pháp luật.
                                 </p>
                             </div>
                         </div>
@@ -400,7 +400,7 @@
                             <div>
                                 <h4 class="font-bold text-orange-900 mb-3">Quyền thay đổi</h4>
                                 <p class="text-orange-800 leading-relaxed mb-4">
-                                    LadyFashion có quyền sửa đổi hoặc cập nhật các điều khoản sử dụng này bất kỳ lúc nào mà không cần thông báo trước. Các thay đổi sẽ có hiệu lực ngay khi được đăng tải trên website.
+                                    Lynlydesign Fashion có quyền sửa đổi hoặc cập nhật các điều khoản sử dụng này bất kỳ lúc nào mà không cần thông báo trước. Các thay đổi sẽ có hiệu lực ngay khi được đăng tải trên website.
                                 </p>
                                 <div class="bg-white/50 rounded-lg p-4">
                                     <p class="text-sm text-orange-800">
@@ -428,7 +428,7 @@
                 <div class="pl-16">
                     <div class="bg-yellow-50 rounded-2xl p-6 border-2 border-yellow-200">
                         <p class="text-yellow-900 leading-relaxed mb-4">
-                            LadyFashion không chịu trách nhiệm cho bất kỳ thiệt hại trực tiếp, gián tiếp, ngẫu nhiên, đặc biệt hoặc hậu quả phát sinh từ:
+                            Lynlydesign Fashion không chịu trách nhiệm cho bất kỳ thiệt hại trực tiếp, gián tiếp, ngẫu nhiên, đặc biệt hoặc hậu quả phát sinh từ:
                         </p>
                         <ul class="space-y-3">
                             <li class="flex items-start gap-3 text-yellow-800">
@@ -545,7 +545,7 @@
                         <i class="fas fa-copyright text-purple-600 text-2xl"></i>
                     </div>
                     <h4 class="font-bold text-slate-900 mb-2 text-sm">Bản quyền</h4>
-                    <p class="text-xs text-slate-600">Mọi nội dung thuộc quyền sở hữu của LadyFashion</p>
+                    <p class="text-xs text-slate-600">Mọi nội dung thuộc quyền sở hữu của Lynlydesign Fashion</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow text-center border border-slate-100">
                     <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">

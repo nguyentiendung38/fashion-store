@@ -6,6 +6,7 @@ use App\Http\Controllers\CollectionController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\HotTrendController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\Admin\HeroImageController;
 
 
 /*
@@ -21,13 +22,6 @@ use App\Http\Controllers\ProductController;
 // ======================================================
 // 🔐 ADMIN ROUTES
 // ======================================================
-// Các route này đều hiển thị trang chủ, nhưng có thể kèm theo yêu cầu cuộn chuột
-Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/gioi-thieu', [HomeController::class, 'index'])->name('about');
-Route::get('/vay-dam', [HomeController::class, 'index'])->name('collections.page');
-Route::get('/ao-khoac', [HomeController::class, 'index'])->name('jackets.page');
-Route::get('/hot-trend', [HomeController::class, 'index'])->name('hottrend.page');
-Route::get('/lien-he', [HomeController::class, 'index'])->name('contact.page');
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 
@@ -70,6 +64,16 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         // ✅ route xóa ảnh phụ
         Route::delete('/images/{image}', [HotTrendController::class, 'deleteImage'])->name('deleteImage');
     });
+
+    // ✅ HERO IMAGES (Banner) ROUTES
+    Route::group(['prefix' => 'hero-images', 'as' => 'hero-images.'], function () {
+        Route::get('/', [HeroImageController::class, 'index'])->name('index');
+        Route::get('/create', [HeroImageController::class, 'create'])->name('create');
+        Route::post('/', [HeroImageController::class, 'store'])->name('store');
+        Route::get('/{heroImage}/edit', [HeroImageController::class, 'edit'])->name('edit');
+        Route::put('/{heroImage}', [HeroImageController::class, 'update'])->name('update');
+        Route::delete('/{heroImage}', [HeroImageController::class, 'destroy'])->name('destroy');
+    });
 });
 
 // ======================================================
@@ -79,6 +83,13 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/products/{hotTrend}', [ProductController::class, 'show'])->name('products.show');
 Route::get('/collections/{collection}', [CollectionController::class, 'show'])->name('collections.show');
+
+// Các route trang chủ với anchor
+Route::get('/gioi-thieu', [HomeController::class, 'index'])->name('about');
+Route::get('/vay-dam', [HomeController::class, 'index'])->name('collections.page');
+Route::get('/ao-khoac', [HomeController::class, 'index'])->name('jackets.page');
+Route::get('/hot-trend', [HomeController::class, 'index'])->name('hottrend.page');
+Route::get('/lien-he', [HomeController::class, 'index'])->name('contact.page');
 
 // =====================MỤC TRANG============================
 

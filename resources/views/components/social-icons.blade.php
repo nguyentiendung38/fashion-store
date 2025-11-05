@@ -4,10 +4,10 @@
             <a href="tel:0769223338" title="Gọi ngay" class="w-14 h-14 flex items-center justify-center bg-gray-700 text-white rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:bg-green-500 hover:-translate-y-1 hover:scale-110">
                 <i class="fas fa-phone-alt text-2xl"></i>
             </a>
-            <a href="https://facebook.com/your-page" target="_blank" rel="noopener noreferrer" title="Facebook" class="w-14 h-14 flex items-center justify-center bg-gray-700 text-white rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:bg-blue-600 hover:-translate-y-1 hover:scale-110">
+            <a href="https://web.facebook.com/profile.php?id=61554157784654" target="_blank" rel="noopener noreferrer" title="Facebook" class="w-14 h-14 flex items-center justify-center bg-gray-700 text-white rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:bg-blue-600 hover:-translate-y-1 hover:scale-110">
                 <i class="fab fa-facebook-f text-2xl"></i>
             </a>
-            <a href="https://instagram.com/your-profile" target="_blank" rel="noopener noreferrer" title="Instagram" class="w-14 h-14 flex items-center justify-center bg-gray-700 text-white rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:bg-pink-500 hover:-translate-y-1 hover:scale-110">
+            <a href="https://www.instagram.com/lynlydesign?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" title="Instagram" class="w-14 h-14 flex items-center justify-center bg-gray-700 text-white rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:bg-pink-500 hover:-translate-y-1 hover:scale-110">
                 <i class="fab fa-instagram text-2xl"></i>
             </a>
         </div>

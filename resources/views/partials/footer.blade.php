@@ -12,7 +12,7 @@
             <div class="md:col-span-12 lg:col-span-4">
                 <a href="{{ url('/') }}" class="inline-block group">
                     <span class="text-4xl font-bold bg-gradient-to-r from-pink-400 via-rose-400 to-purple-400 bg-clip-text text-transparent hover:from-purple-400 hover:via-rose-400 hover:to-pink-400 transition-all duration-500">
-                        Lady
+                        Lynlydesign 
                     </span>
                 </a>
                 <p class="mt-6 text-gray-400 leading-relaxed max-w-sm">
@@ -158,7 +158,7 @@
                         </div>
                         <div>
                             <p class="text-xs text-gray-500 mb-1">Email</p>
-                            <a href="mailto:contact@lady.vn" class="text-gray-300 hover:text-pink-400 transition-colors">contact@lady.vn</a>
+                            <a href="mailto:lynlydesign2022@gmail.com" class="text-gray-300 hover:text-pink-400 transition-colors">lynlydesign2022@gmail.com</a>
                         </div>
                     </li>
                     <li class="flex items-start group">
@@ -170,7 +170,7 @@
                         </div>
                         <div>
                             <p class="text-xs text-gray-500 mb-1">Địa chỉ</p>
-                            <p class="text-gray-300 text-sm leading-relaxed">Huế, Thừa Thiên Huế</p>
+                            <p class="text-gray-300 text-sm leading-relaxed">96a Ngõ 1194 Đường Láng - Láng Thượng - Đống Đa - Hà Nội</p>
                         </div>
                     </li>
                 </ul>
@@ -183,7 +183,7 @@
                 <!-- Copyright -->
                 <div class="text-center lg:text-left">
                     <p class="text-gray-400 text-sm">
-                        © {{ date('Y') }} <span class="text-pink-400 font-semibold">Lady</span>. All Rights Reserved.
+                        © {{ date('Y') }} <span class="text-pink-400 font-semibold">Lynlydesign</span>. All Rights Reserved.
                     </p>
                     <p class="text-gray-500 text-xs mt-1">Made with ❤️ in Vietnam</p>
                 </div>

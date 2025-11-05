@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 {{-- Đặt tiêu đề cho trang --}}
-@section('title', 'Chính Sách Bảo Mật - LadyFashion')
+@section('title', 'Chính Sách Bảo Mật - Lynlydesign Fashion')
 
 {{-- Bắt đầu phần nội dung chính của trang --}}
 @section('content')
@@ -69,7 +69,7 @@
                             <div class="flex items-start gap-3">
                                 <i class="fas fa-exclamation-triangle text-amber-600 mt-1"></i>
                                 <p class="text-amber-800 text-sm">
-                                    <strong>Lưu ý:</strong> Mọi thông tin khai báo phải đảm bảo tính chính xác và hợp pháp. LadyFashion không chịu mọi trách nhiệm liên quan đến pháp luật của thông tin khai báo sai lệch.
+                                    <strong>Lưu ý:</strong> Mọi thông tin khai báo phải đảm bảo tính chính xác và hợp pháp. Lynlydesign Fashion không chịu mọi trách nhiệm liên quan đến pháp luật của thông tin khai báo sai lệch.
                                 </p>
                             </div>
                         </div>
