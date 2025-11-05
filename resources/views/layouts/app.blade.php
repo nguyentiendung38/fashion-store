@@ -9,24 +9,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     {{-- Dynamic Title --}}
-    <title>@yield('title', 'LadyFashion - Thời trang nữ cao cấp')</title>
+    <title>@yield('title', 'Lynlydesign Fashion - Thời trang nữ cao cấp')</title>
 
     {{-- SEO Meta Tags --}}
-    <meta name="description" content="@yield('meta_description', 'LadyFashion - Thời trang nữ cao cấp, tối giản, hiện đại. Khám phá bộ sưu tập mới, nhận tư vấn và báo giá nhanh qua Zalo.')">
-    <meta name="keywords" content="@yield('meta_keywords', 'thời trang nữ, váy, đầm, áo khoác, công sở, dạo phố, ladyfashion, boutique')">
+    <meta name="description" content="@yield('meta_description', 'Lynlydesign Fashion - Thời trang nữ cao cấp, tối giản, hiện đại. Khám phá bộ sưu tập mới, nhận tư vấn và báo giá nhanh qua Zalo.')">
+    <meta name="keywords" content="@yield('meta_keywords', 'thời trang nữ, váy, đầm, áo khoác, công sở, dạo phố, lynlydesignfashion, boutique')">
     <link rel="canonical" href="{{ url()->current() }}">
 
     {{-- Open Graph Meta Tags --}}
     <meta property="og:type" content="website">
-    <meta property="og:title" content="@yield('og_title', 'LadyFashion - Thời trang nữ cao cấp')">
+    <meta property="og:title" content="@yield('og_title', 'Lynlydesign Fashion - Thời trang nữ cao cấp')">
     <meta property="og:description" content="@yield('og_description', 'Phong cách thanh lịch – hiện đại – tối giản. Tư vấn nhanh qua Zalo.')">
     <meta property="og:image" content="@yield('og_image', asset('images/og-image.jpg'))">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:site_name" content="LadyFashion">
+    <meta property="og:site_name" content="Lynlydesign Fashion">
 
     {{-- Twitter Card --}}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('og_title', 'LadyFashion - Thời trang nữ cao cấp')">
+    <meta name="twitter:title" content="@yield('og_title', 'Lynlydesign Fashion - Thời trang nữ cao cấp')">
     <meta name="twitter:description" content="@yield('og_description', 'Phong cách thanh lịch – hiện đại – tối giản.')">
     <meta name="twitter:image" content="@yield('og_image', asset('images/og-image.jpg'))">
 

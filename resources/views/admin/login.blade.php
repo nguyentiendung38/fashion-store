@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Login - LadyFashion</title>
+    <title>Admin Login - Lynlydesign</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body { background-color: #f8f9fa; height: 100vh; display: grid; place-items: center; }
@@ -13,7 +13,7 @@
 <body>
     <div class="card login-card">
         <div class="card-body">
-            <h4 class="card-title text-center mb-4">LadyFashion Admin</h4>
+            <h4 class="card-title text-center mb-4">Lynlydesign Admin</h4>
             
             @if ($errors->any())
                 <div class="alert alert-danger">

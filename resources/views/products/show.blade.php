@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $hotTrend->name . ' - LadyFashion')
+@section('title', $hotTrend->name . ' - Lynlydesign Fashion')
 
 @section('content')
 <div class="bg-white">

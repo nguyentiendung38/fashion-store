@@ -4,7 +4,7 @@
 <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
     <div class="flex justify-between items-center mb-6">
-        <h2 class="text-3xl font-bold text-gray-800">Quản lý Bộ Sưu Tập</h2>
+        <h2 class="text-3xl font-bold text-gray-800">Quản lý Váy Đầm</h2>
         <a href="{{ route('admin.collections.create') }}"
             class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
             Thêm mới

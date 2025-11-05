@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Váy Lụa Tay Phồng Cổ Vuông - LadyFashion')
+@section('title', 'Váy Lụa Tay Phồng Cổ Vuông - Lynlydesign Fashion')
 
 @section('content')
 <div class="bg-white">
