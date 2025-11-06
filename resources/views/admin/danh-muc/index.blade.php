@@ -5,10 +5,10 @@
     <!-- Header -->
     <div class="flex justify-between items-center mb-6">
         <div>
-            <h1 class="text-3xl font-bold text-gray-800">Quản Lý Banner Hero</h1>
+            <h1 class="text-3xl font-bold text-gray-800">Quản Lý Banner Danh Mục</h1>
             <p class="text-gray-600 mt-1">Quản lý các ảnh banner hiển thị trên trang chủ</p>
         </div>
-        <a href="{{ route('admin.hero-images.create') }}"
+        <a href="{{ route('admin.category-banners.create') }}"
             class="bg-gradient-to-r from-blue-500 to-blue-600 text-black px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all flex items-center gap-2">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
@@ -48,7 +48,7 @@
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-gray-200">
-                    @forelse($heroImages as $image)
+                    @forelse($categoryBanners as $image)
                     <tr class="hover:bg-gray-50 transition-colors">
                         <td class="px-6 py-4">
                             <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gradient-to-r from-pink-500 to-rose-500 text-black">
@@ -57,12 +57,12 @@
                         </td>
                         <td class="px-6 py-4">
                             <img src="{{ Storage::url($image->image) }}"
-                                alt="{{ $image->alt_text }}"
+                                alt="{{ $image->title }}"
                                 class="w-32 h-20 object-cover rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer"
-                                onclick="openImageModal('{{ Storage::url($image->image) }}', '{{ $image->alt_text }}')">
+                                onclick="openImageModal('{{ Storage::url($image->image) }}', '{{ $image->title }}')">
                         </td>
                         <td class="px-6 py-4">
-                            <p class="text-gray-700">{{ $image->alt_text ?? 'Không có mô tả' }}</p>
+                            <p class="text-gray-700">{{ $image->description ?? 'Không có mô tả' }}</p>
                         </td>
                         <td class="px-6 py-4">
                             @if($image->is_active)
@@ -83,14 +83,14 @@
                         </td>
                         <td class="px-6 py-4">
                             <div class="flex gap-2">
-                                <a href="{{ route('admin.hero-images.edit', $image) }}"
+                                <a href="{{ route('admin.category-banners.edit', $image) }}"
                                     class="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
                                     </svg>
                                     Sửa
                                 </a>
-                                <form action="{{ route('admin.hero-images.destroy', $image) }}"
+                                <form action="{{ route('admin.category-banners.destroy', $image) }}"
                                     method="POST"
                                     onsubmit="return confirm('Bạn có chắc muốn xóa banner này?')"
                                     class="inline">
@@ -116,7 +116,7 @@
                                 </svg>
                                 <p class="text-gray-500 text-lg font-medium">Chưa có banner nào!</p>
                                 <p class="text-gray-400 mt-1">Hãy thêm banner đầu tiên cho website của bạn</p>
-                                <a href="{{ route('admin.hero-images.create') }}"
+                                <a href="{{ route('admin.category-banners.create') }}"
                                     class="mt-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all">
                                     Thêm Banner Ngay
                                 </a>
@@ -136,7 +136,7 @@
                 <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
             </svg>
             <div>
-                <p class="text-sm text-blue-800 font-medium">Lưu ý về Banner Hero</p>
+                <p class="text-sm text-blue-800 font-medium">Lưu ý về Banner danh mục</p>
                 <ul class="text-sm text-blue-700 mt-2 list-disc list-inside space-y-1">
                     <li>Tối đa 4 banner (Vị trí 1-4)</li>
                     <li>Kích thước đề xuất: 600x800px (tỷ lệ 3:4)</li>
