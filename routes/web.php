@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\HotTrendController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\Admin\HeroImageController;
+use App\Http\Controllers\Admin\CategoryBannerController;
 
 
 /*
@@ -74,7 +75,21 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::put('/{heroImage}', [HeroImageController::class, 'update'])->name('update');
         Route::delete('/{heroImage}', [HeroImageController::class, 'destroy'])->name('destroy');
     });
+
+    
+    // ✅ CATEGORY BANNERS ROUTES
+    Route::group(['prefix' => 'category-banners', 'as' => 'category-banners.'], function () {
+        Route::get('/', [CategoryBannerController::class, 'index'])->name('index');
+        Route::get('/create', [CategoryBannerController::class, 'create'])->name('create');
+        Route::post('/', [CategoryBannerController::class, 'store'])->name('store');
+        Route::get('/{categoryBanner}/edit', [CategoryBannerController::class, 'edit'])->name('edit');
+        Route::put('/{categoryBanner}', [CategoryBannerController::class, 'update'])->name('update');
+        Route::delete('/{categoryBanner}', [CategoryBannerController::class, 'destroy'])->name('destroy');
+        
+    });
 });
+// DANH MỤC ADMIN ROUTES?/
+
 
 // ======================================================
 // 🌐 PUBLIC ROUTES (Client)

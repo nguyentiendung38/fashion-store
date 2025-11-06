@@ -253,42 +253,58 @@
             </p>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <!-- Category 1 -->
+            @forelse($categoryBanners as $banner)
+            <!-- Category {{ $banner->position }} -->
+            <a href="#" class="category-card group relative rounded-2xl overflow-hidden aspect-[3/4] shadow-lg">
+                <img src="{{ Storage::url($banner->image) }}"
+                    alt="{{ $banner->description ?? 'Category Banner' }}"
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-white z-10">
+                    @if($banner->description)
+                    <h3 class="text-xl font-bold px-4 text-center">{{ $banner->description }}</h3>
+                    @endif
+                </div>
+            </a>
+            @empty
+            <!-- Fallback: Hiển thị banner mặc định khi chưa có dữ liệu từ admin -->
             <a href="#" class="category-card group relative rounded-2xl overflow-hidden aspect-[3/4] shadow-lg">
                 <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop" alt="Váy Công Sở" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                 <div class="absolute inset-0 flex flex-col items-center justify-center text-white z-10">
                     <i class="fas fa-briefcase text-3xl mb-3 opacity-0 group-hover:opacity-100 transition-opacity"></i>
                     <h3 class="text-xl font-bold">Váy Công Sở</h3>
                     <p class="text-sm opacity-90 mt-1">120+ sản phẩm</p>
                 </div>
             </a>
-            <!-- Category 2 -->
             <a href="#" class="category-card group relative rounded-2xl overflow-hidden aspect-[3/4] shadow-lg">
                 <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=600&auto=format&fit=crop" alt="Váy Dạo Phố" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                 <div class="absolute inset-0 flex flex-col items-center justify-center text-white z-10">
                     <i class="fas fa-shopping-bag text-3xl mb-3 opacity-0 group-hover:opacity-100 transition-opacity"></i>
                     <h3 class="text-xl font-bold">Váy Dạo Phố</h3>
                     <p class="text-sm opacity-90 mt-1">85+ sản phẩm</p>
                 </div>
             </a>
-            <!-- Category 3 -->
             <a href="#" class="category-card group relative rounded-2xl overflow-hidden aspect-[3/4] shadow-lg">
                 <img src="https://images.unsplash.com/photo-1591369822096-ffd140ec948f?q=80&w=600&auto=format&fit=crop" alt="Áo Khoác" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                 <div class="absolute inset-0 flex flex-col items-center justify-center text-white z-10">
                     <i class="fas fa-tshirt text-3xl mb-3 opacity-0 group-hover:opacity-100 transition-opacity"></i>
                     <h3 class="text-xl font-bold">Áo Khoác</h3>
                     <p class="text-sm opacity-90 mt-1">60+ sản phẩm</p>
                 </div>
             </a>
-            <!-- Category 4 -->
             <a href="#" class="category-card group relative rounded-2xl overflow-hidden aspect-[3/4] shadow-lg">
                 <img src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?q=80&w=600&auto=format&fit=crop" alt="Phụ Kiện" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                 <div class="absolute inset-0 flex flex-col items-center justify-center text-white z-10">
                     <i class="fas fa-gem text-3xl mb-3 opacity-0 group-hover:opacity-100 transition-opacity"></i>
                     <h3 class="text-xl font-bold">Phụ Kiện</h3>
                     <p class="text-sm opacity-90 mt-1">45+ sản phẩm</p>
                 </div>
             </a>
+            @endforelse
         </div>
     </div>
 </section>

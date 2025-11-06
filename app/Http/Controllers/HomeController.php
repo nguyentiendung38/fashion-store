@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Collection;
 use App\Models\HotTrend;
 use App\Models\HeroImage; // ✅ Thêm dòng này
+use App\Models\CategoryBanner; // ✅ THÊM dòng này
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,9 +17,13 @@ class HomeController extends Controller
         // Load dữ liệu như cũ
         $collections = Collection::latest()->get();
         $hotTrends = HotTrend::all();
-        
+
         // ✅ Thêm dòng này để lấy hero images
         $heroImages = HeroImage::where('is_active', true)
+            ->orderBy('position')
+            ->get();
+        // ✅ THÊM phần này để lấy category banners
+        $categoryBanners = CategoryBanner::where('is_active', true)
             ->orderBy('position')
             ->get();
 
@@ -46,6 +52,7 @@ class HomeController extends Controller
             'collections' => $collections,
             'hotTrends' => $hotTrends,
             'heroImages' => $heroImages, // ✅ Thêm dòng này
+            'categoryBanners' => $categoryBanners, // ✅ THÊM dòng này
             'scrollToSection' => $scrollToSection,
         ]);
     }
