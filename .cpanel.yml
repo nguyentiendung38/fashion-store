@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/duyloiag/lynlydesign.com/
+    - /bin/cp -R * $DEPLOYPATH
