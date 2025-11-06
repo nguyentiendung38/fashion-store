@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 {{-- Đặt tiêu đề cho trang --}}
-@section('title', 'Chính Sách Đổi Trả - LadyFashion')
+@section('title', 'Chính Sách Đổi Trả - Lynlydesign Fashion')
 
 {{-- Bắt đầu phần nội dung chính của trang --}}
 @section('content')
@@ -186,7 +186,7 @@
                                     <div class="flex items-start gap-3">
                                         <i class="fas fa-map-marker-alt text-purple-600 mt-1"></i>
                                         <div>
-                                            <p class="font-semibold text-purple-900">LadyFashion</p>
+                                            <p class="font-semibold text-purple-900">Lynlydesign Fashion</p>
                                             <p class="text-sm text-purple-700">96a ngõ 1194 đường Láng</p>
                                             <p class="text-sm text-purple-700">Đống Đa, Hà Nội</p>
                                         </div>
@@ -240,7 +240,7 @@
                                 <h3 class="font-bold text-green-900 text-lg">MIỄN PHÍ vận chuyển</h3>
                             </div>
                             <p class="text-green-800 mb-4">
-                                LadyFashion chịu toàn bộ chi phí vận chuyển trong các trường hợp:
+                                Lynlydesign Fashion chịu toàn bộ chi phí vận chuyển trong các trường hợp:
                             </p>
                             <ul class="space-y-2">
                                 <li class="flex items-start gap-2 text-green-700">

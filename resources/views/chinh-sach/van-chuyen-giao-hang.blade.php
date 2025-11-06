@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 {{-- Đặt tiêu đề cho trang --}}
-@section('title', 'Vận Chuyển & Giao Hàng - LadyFashion')
+@section('title', 'Vận Chuyển & Giao Hàng - Lynlydesign Fashion')
 
 {{-- Bắt đầu phần nội dung chính của trang --}}
 @section('content')
@@ -483,7 +483,7 @@
                     </button>
                     <div class="faq-content hidden px-6 pb-4 bg-slate-50 border-t border-slate-200">
                         <p class="text-slate-700 leading-relaxed mb-3">
-                            LadyFashion cung cấp chính sách hoàn trả/đổi hàng trong vòng 7 ngày kể từ khi nhận sản phẩm, với điều kiện:
+                            Lynlydesign Fashion cung cấp chính sách hoàn trả/đổi hàng trong vòng 7 ngày kể từ khi nhận sản phẩm, với điều kiện:
                         </p>
                         <ul class="text-slate-700 space-y-2">
                             <li class="flex items-center gap-2">

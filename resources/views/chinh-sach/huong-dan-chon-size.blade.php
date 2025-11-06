@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 {{-- Đặt tiêu đề cho trang --}}
-@section('title', 'Hướng Dẫn Chọn Size - LadyFashion')
+@section('title', 'Hướng Dẫn Chọn Size - Lynlydesign Fashion')
 
 {{-- Bắt đầu phần nội dung chính của trang --}}
 @section('content')
@@ -558,7 +558,7 @@
                         <table class="w-full">
                             <thead>
                                 <tr class="border-b-2 border-slate-300">
-                                    <th class="py-3 px-4 text-left font-bold text-slate-700">LadyFashion</th>
+                                    <th class="py-3 px-4 text-left font-bold text-slate-700">Lynlydesign Fashion</th>
                                     <th class="py-3 px-4 text-center font-bold text-slate-700">Quốc tế</th>
                                     <th class="py-3 px-4 text-center font-bold text-slate-700">Châu Âu</th>
                                     <th class="py-3 px-4 text-center font-bold text-slate-700">Anh</th>
