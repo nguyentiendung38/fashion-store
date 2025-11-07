@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 ---
 deployment:
   tasks:
     - export DEPLOYPATH=/home/duyloiag/lynlydesign.com/
     - /bin/cp -R * $DEPLOYPATH
+=======
+
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/duyloiag/lynlydesign.com/
+    - /bin/cp -R * $DEPLOYPATH
+>>>>>>> 953169a82e3b9d3a1604588fb30474f0184b3336
