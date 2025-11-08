@@ -6,6 +6,8 @@ use App\Models\Collection;
 use App\Models\HotTrend;
 use App\Models\HeroImage; // ✅ Thêm dòng này
 use App\Models\CategoryBanner; // ✅ THÊM dòng này
+use App\Models\LookbookItem; // ✅ THÊM dòng này
+
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -25,6 +27,17 @@ class HomeController extends Controller
         // ✅ THÊM phần này để lấy category banners
         $categoryBanners = CategoryBanner::where('is_active', true)
             ->orderBy('position')
+            ->get();
+
+        $lookbookVideo = LookbookItem::where('media_type', 'video')
+            ->where('is_active', true)
+            ->orderBy('position')
+            ->first();
+
+        $lookbookImages = LookbookItem::where('media_type', 'image')
+            ->where('is_active', true)
+            ->orderBy('position')
+            ->take(2)
             ->get();
 
         // === PHẦN LOGIC QUAN TRỌNG ĐƯỢC BỔ SUNG ===
@@ -53,6 +66,8 @@ class HomeController extends Controller
             'hotTrends' => $hotTrends,
             'heroImages' => $heroImages, // ✅ Thêm dòng này
             'categoryBanners' => $categoryBanners, // ✅ THÊM dòng này
+            'lookbookVideo' => $lookbookVideo,
+            'lookbookImages' => $lookbookImages,
             'scrollToSection' => $scrollToSection,
         ]);
     }
