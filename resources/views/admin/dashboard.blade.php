@@ -58,6 +58,15 @@
                     </svg>
                     <span>Lookbook Thu Đông</span>
                 </a>
+                <a href="{{ route('admin.instagram.index') }}"
+                    class="flex items-center px-4 py-2.5 text-gray-300 hover:bg-gray-700 hover:text-white rounded-md transition duration-200">
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+                        <path d="M16 11.37a4 4 0 11-4-4 4 4 0 014 4z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+                    </svg>
+                    <span>Banner Instagram</span>
+                </a>
 
 
                 <div class="px-4 pb-6">

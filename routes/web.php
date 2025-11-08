@@ -9,7 +9,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\Admin\HeroImageController;
 use App\Http\Controllers\Admin\CategoryBannerController;
 use App\Http\Controllers\Admin\ThuDongBannerController;
-
+use App\Http\Controllers\Admin\InstagramBannerController;
 
 
 
@@ -79,7 +79,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::delete('/{heroImage}', [HeroImageController::class, 'destroy'])->name('destroy');
     });
 
-    
+
     // ✅ CATEGORY BANNERS ROUTES
     Route::group(['prefix' => 'category-banners', 'as' => 'category-banners.'], function () {
         Route::get('/', [CategoryBannerController::class, 'index'])->name('index');
@@ -88,7 +88,6 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::get('/{categoryBanner}/edit', [CategoryBannerController::class, 'edit'])->name('edit');
         Route::put('/{categoryBanner}', [CategoryBannerController::class, 'update'])->name('update');
         Route::delete('/{categoryBanner}', [CategoryBannerController::class, 'destroy'])->name('destroy');
-        
     });
 
     // Lookbook Routes
@@ -98,6 +97,17 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::get('/lookbook/{lookbookItem}/edit', [ThuDongBannerController::class, 'edit'])->name('lookbook.edit');
     Route::put('/lookbook/{lookbookItem}', [ThuDongBannerController::class, 'update'])->name('lookbook.update');
     Route::delete('/lookbook/{lookbookItem}', [ThuDongBannerController::class, 'destroy'])->name('lookbook.destroy');
+});
+
+
+// Admin Instagram Banner Routes
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::get('/instagram', [InstagramBannerController::class, 'index'])->name('instagram.index');
+    Route::get('/instagram/create', [InstagramBannerController::class, 'create'])->name('instagram.create');
+    Route::post('/instagram', [InstagramBannerController::class, 'store'])->name('instagram.store');
+    Route::get('/instagram/{instagramBanner}/edit', [InstagramBannerController::class, 'edit'])->name('instagram.edit');
+    Route::put('/instagram/{instagramBanner}', [InstagramBannerController::class, 'update'])->name('instagram.update');
+    Route::delete('/instagram/{instagramBanner}', [InstagramBannerController::class, 'destroy'])->name('instagram.destroy');
 });
 // DANH MỤC ADMIN ROUTES?/
 
