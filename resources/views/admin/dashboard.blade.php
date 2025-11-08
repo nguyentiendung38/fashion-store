@@ -50,20 +50,28 @@
                     </svg>
                     <span>Banner Danh Mục</span>
                 </a>
+                <!-- Trong sidebar admin -->
+                <a href="{{ route('admin.lookbook.index') }}"
+                    class="flex items-center px-4 py-2.5 text-gray-300 hover:bg-gray-700 hover:text-white rounded-md transition duration-200">
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                    </svg>
+                    <span>Lookbook Thu Đông</span>
+                </a>
 
-            
-            <div class="px-4 pb-6">
-                <form method="POST" action="{{ route('admin.logout') }}">
-                    @csrf
-                    <button type="submit"
-                        class="w-full flex items-center justify-center px-4 py-2.5 text-gray-300 hover:bg-red-600 hover:text-white rounded-md transition duration-200">
-                        <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
-                        </svg>
-                        <span>Đăng xuất</span>
-                    </button>
-                </form>
-            </div>
+
+                <div class="px-4 pb-6">
+                    <form method="POST" action="{{ route('admin.logout') }}">
+                        @csrf
+                        <button type="submit"
+                            class="w-full flex items-center justify-center px-4 py-2.5 text-gray-300 hover:bg-red-600 hover:text-white rounded-md transition duration-200">
+                            <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+                            </svg>
+                            <span>Đăng xuất</span>
+                        </button>
+                    </form>
+                </div>
         </aside>
         <main class="ml-64 flex-1 p-8">
             @yield('content')

@@ -416,59 +416,45 @@
         <!-- Lưới Lookbook -->
         <div class="grid md:grid-cols-2 gap-6 items-stretch">
             <!-- Video chính -->
-            <div id="video-container" class="relative rounded-2xl overflow-hidden group cursor-pointer">
-                <video id="lookbook-video" loop playsinline class="w-full h-full object-cover">
-                    <source src="{{ asset('images/khachhang/video.mp4') }}" type="video/mp4">
+            @if($lookbookVideo)
+            <div class="relative rounded-2xl overflow-hidden group cursor-pointer">
+                <video loop playsinline class="w-full h-full object-cover">
+                    <source src="{{ asset('storage/' . $lookbookVideo->media_path) }}" type="video/mp4">
                     Trình duyệt của bạn không hỗ trợ video.
                 </video>
 
-                <!-- Overlay -->
-                <div id="video-overlay"
-                    class="absolute inset-0 flex items-center justify-center bg-black/40 transition-all">
+                <div class="absolute inset-0 flex items-center justify-center bg-black/40 transition-all">
                     <div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center">
                         <i class="fas fa-play text-pink-600 text-2xl ml-1"></i>
                     </div>
                 </div>
 
-                <!-- Caption -->
-                <div
-                    class="absolute bottom-0 left-0 right-0 p-8 text-white bg-gradient-to-t from-black/70 via-black/30 to-transparent z-10">
-                    <h3 class="text-2xl font-bold mb-2">Lookbook Thu Đông 2024</h3>
-                    <p class="text-sm opacity-90">Xem video giới thiệu bộ sưu tập mới nhất</p>
+                <div class="absolute bottom-0 left-0 right-0 p-8 text-white bg-gradient-to-t from-black/70 via-black/30 to-transparent z-10">
+                    <h3 class="text-2xl font-bold mb-2">{{ $lookbookVideo->title }}</h3>
+                    <p class="text-sm opacity-90">{{ $lookbookVideo->description }}</p>
                 </div>
             </div>
+            @endif
 
-            <!-- Cột ảnh bên phải -->
+            <!-- 2 Ảnh -->
             <div class="flex flex-col gap-6">
-                <!-- Ảnh Lookbook 1 -->
+                @foreach($lookbookImages as $image)
                 <div class="relative rounded-2xl overflow-hidden group">
-                    <img src="{{ asset('images/khachhang/anh9.jpg') }}" alt="Look 1"
+                    <img src="{{ asset('storage/' . $image->media_path) }}" alt="{{ $image->title }}"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                         <div class="absolute bottom-0 p-6 text-white">
-                            <h4 class="font-bold text-lg">Elegant Office Look</h4>
-                            <p class="text-sm">Thanh lịch &amp; Chuyên nghiệp</p>
+                            <h4 class="font-bold text-lg">{{ $image->title }}</h4>
+                            <p class="text-sm">{{ $image->description }}</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Ảnh Lookbook 2 -->
-                <div class="relative rounded-2xl overflow-hidden group">
-                    <img src="{{ asset('images/khachhang/anh10.jpg') }}" alt="Look 2"
-                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                        <div class="absolute bottom-0 p-6 text-white">
-                            <h4 class="font-bold text-lg">Casual Weekend Style</h4>
-                            <p class="text-sm">Thoải mái &amp; Trẻ trung</p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
 </section>
+
 
 
 <section id="hot-trend" class="py-20 md:py-32 bg-white">

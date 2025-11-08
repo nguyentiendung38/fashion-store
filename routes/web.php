@@ -8,6 +8,9 @@ use App\Http\Controllers\HotTrendController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\Admin\HeroImageController;
 use App\Http\Controllers\Admin\CategoryBannerController;
+use App\Http\Controllers\Admin\ThuDongBannerController;
+
+
 
 
 /*
@@ -87,6 +90,14 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::delete('/{categoryBanner}', [CategoryBannerController::class, 'destroy'])->name('destroy');
         
     });
+
+    // Lookbook Routes
+    Route::get('/lookbook', [ThuDongBannerController::class, 'index'])->name('lookbook.index');
+    Route::get('/lookbook/create', [ThuDongBannerController::class, 'create'])->name('lookbook.create');
+    Route::post('/lookbook', [ThuDongBannerController::class, 'store'])->name('lookbook.store');
+    Route::get('/lookbook/{lookbookItem}/edit', [ThuDongBannerController::class, 'edit'])->name('lookbook.edit');
+    Route::put('/lookbook/{lookbookItem}', [ThuDongBannerController::class, 'update'])->name('lookbook.update');
+    Route::delete('/lookbook/{lookbookItem}', [ThuDongBannerController::class, 'destroy'])->name('lookbook.destroy');
 });
 // DANH MỤC ADMIN ROUTES?/
 
