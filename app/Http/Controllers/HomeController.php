@@ -4,11 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Collection;
 use App\Models\HotTrend;
-use App\Models\HeroImage; // ✅ Thêm dòng này
-use App\Models\CategoryBanner; // ✅ THÊM dòng này
-use App\Models\LookbookItem; // ✅ THÊM dòng này
-
-
+use App\Models\HeroImage;
+use App\Models\CategoryBanner;
+use App\Models\LookbookItem;
+use App\Models\InstagramBanner; // ✅ THÊM dòng này
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,28 +19,36 @@ class HomeController extends Controller
         $collections = Collection::latest()->get();
         $hotTrends = HotTrend::all();
 
-        // ✅ Thêm dòng này để lấy hero images
+        // Hero images
         $heroImages = HeroImage::where('is_active', true)
             ->orderBy('position')
             ->get();
-        // ✅ THÊM phần này để lấy category banners
+
+        // Category banners
         $categoryBanners = CategoryBanner::where('is_active', true)
             ->orderBy('position')
             ->get();
 
+        // Lookbook video
         $lookbookVideo = LookbookItem::where('media_type', 'video')
             ->where('is_active', true)
             ->orderBy('position')
             ->first();
 
+        // Lookbook images
         $lookbookImages = LookbookItem::where('media_type', 'image')
             ->where('is_active', true)
             ->orderBy('position')
             ->take(2)
             ->get();
 
-        // === PHẦN LOGIC QUAN TRỌNG ĐƯỢC BỔ SUNG ===
+        // ✅ THÊM Instagram banners
+        $instagramBanners = InstagramBanner::where('is_active', true)
+            ->orderBy('position')
+            ->limit(6)
+            ->get();
 
+        // === PHẦN LOGIC QUAN TRỌNG ĐƯỢC BỔ SUNG ===
         // Xác định section cần cuộn tới dựa trên tên route
         $scrollToSection = null;
         $routeName = $request->route()->getName();
@@ -60,14 +67,15 @@ class HomeController extends Controller
         }
         // ===============================================
 
-        // ✅ Sửa lại phần return này, thêm heroImages vào
+        // Return view với tất cả dữ liệu
         return view('landing', [
             'collections' => $collections,
             'hotTrends' => $hotTrends,
-            'heroImages' => $heroImages, // ✅ Thêm dòng này
-            'categoryBanners' => $categoryBanners, // ✅ THÊM dòng này
+            'heroImages' => $heroImages,
+            'categoryBanners' => $categoryBanners,
             'lookbookVideo' => $lookbookVideo,
             'lookbookImages' => $lookbookImages,
+            'instagramBanners' => $instagramBanners, // ✅ THÊM dòng này
             'scrollToSection' => $scrollToSection,
         ]);
     }

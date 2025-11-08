@@ -86,7 +86,7 @@ class HeroImageController extends Controller
             if ($heroImage->image) {
                 Storage::disk('public')->delete($heroImage->image);
             }
-            
+
             // Lưu ảnh mới
             $data['image'] = $request->file('image')->store('hero-images', 'public');
         }
@@ -104,7 +104,7 @@ class HeroImageController extends Controller
         if ($heroImage->image) {
             Storage::disk('public')->delete($heroImage->image);
         }
-        
+
         // Xóa record trong database
         $heroImage->delete();
 

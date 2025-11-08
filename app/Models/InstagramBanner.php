@@ -1,18 +1,15 @@
 <?php
-// app/Models/LookbookItem.php
 
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class LookbookItem extends Model
+class InstagramBanner extends Model
 {
     protected $fillable = [
-        'media_path',
-        'media_type',
+        'image_path',
         'position',
-        'title',
-        'description',
+        'instagram_url',
         'is_active'
     ];
 

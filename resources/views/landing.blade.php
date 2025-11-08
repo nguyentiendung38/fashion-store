@@ -645,6 +645,7 @@
         </div>
     </div>
 </section>
+@if($instagramBanners->count() > 0)
 <section class="py-20 md:py-32 bg-gradient-to-b from-white to-pink-50/30">
     <div class="container mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto mb-16">
@@ -658,6 +659,48 @@
                 Cảm ơn các nàng đã tin tưởng và đồng hành cùng Lynlydesign Fashion
             </p>
         </div>
+
+        <div class="instagram-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            @foreach($instagramBanners as $banner)
+            <!-- Instagram Post {{ $banner->position }} -->
+            <a href="{{ $banner->instagram_url ?? 'https://www.instagram.com/lynlydesign?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' }}"
+                target="_blank"
+                class="relative overflow-hidden rounded-lg aspect-square group">
+                <img src="{{ Storage::url($banner->image_path) }}"
+                    alt="Instagram Post {{ $banner->position }}"
+                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <i class="fab fa-instagram text-white text-3xl"></i>
+                </div>
+            </a>
+            @endforeach
+        </div>
+
+        <div class="text-center mt-10">
+            <a href="https://www.instagram.com/lynlydesign?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold py-3 px-8 rounded-lg hover:shadow-lg transition-all">
+                <i class="fab fa-instagram text-xl"></i>
+                Theo dõi lynlydesign
+            </a>
+        </div>
+    </div>
+</section>
+@else
+<section class="py-20 md:py-32 bg-gradient-to-b from-white to-pink-50/30">
+    <div class="container mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="inline-block px-4 py-2 bg-pink-100 text-pink-600 rounded-full text-sm font-semibold mb-4">
+                @lynlydesign
+            </span>
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
+                Khách Hàng <span class="gradient-text">Yêu Thích</span>
+            </h2>
+            <p class="mt-4 text-lg text-slate-600 leading-relaxed">
+                Cảm ơn các nàng đã tin tưởng và đồng hành cùng Lynlydesign Fashion
+            </p>
+        </div>
+
         <div class="instagram-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             <!-- Instagram Post 1 -->
             <a href="https://www.instagram.com/lynlydesign?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="relative overflow-hidden rounded-lg aspect-square group">
@@ -702,6 +745,7 @@
                 </div>
             </a>
         </div>
+
         <div class="text-center mt-10">
             <a href="https://www.instagram.com/lynlydesign?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold py-3 px-8 rounded-lg hover:shadow-lg transition-all">
                 <i class="fab fa-instagram text-xl"></i>
@@ -710,25 +754,7 @@
         </div>
     </div>
 </section>
-<section id="contact" class="py-20 md:py-32 bg-background">
-    <div class="container mx-auto px-6">
-        <div class="text-center max-w-2xl mx-auto mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-primary">Liên Hệ & Tư Vấn</h2>
-            <p class="mt-4 text-lg text-muted leading-relaxed">Chúng tôi luôn sẵn sàng lắng nghe và tư vấn. Hãy kết nối với Lynlydesign Fashion ngay hôm nay.</p>
-        </div>
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <p class="flex items-start text-lg"><i class="fas fa-map-marker-alt text-secondary w-6 pt-1"></i> <span class="ml-4 text-muted">96a Ngõ 1194 Đường Láng - Láng Thượng - Đống Đa - Hà Nội</span></p>
-                <p class="flex items-start text-lg"><i class="fas fa-phone-alt text-secondary w-6 pt-1"></i> <span class="ml-4 text-muted">0769.223.338</span></p>
-                <p class="flex items-start text-lg"><i class="fas fa-envelope text-secondary w-6 pt-1"></i> <span class="ml-4 text-muted">lynlydesign2022@gmail.com</span></p>
-                <a href="https://zalo.me/0769223338" target="_blank" class="mt-8 inline-block bg-primary text-white font-semibold py-4 px-8 rounded-md hover:bg-black transition-all">Chat ngay qua Zalo</a>
-            </div>
-            <div class="rounded-lg overflow-hidden shadow-xl h-96">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.135293026335!2d105.7981559759247!3d21.02724498062228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab554522855f%3A0x624933748e7150a!2zTmcuIDExOTQgUC4gTMOhbmcsIEzDoW5nIFRoxrDhu6NuZywgxJDhu5FuZyDEkGEsIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1699999999999!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </div>
-</section>
+@endif
 <section class="py-20 bg-stone-100/60">
     <div class="container mx-auto px-6 text-center">
         <div class="max-w-2xl mx-auto">
