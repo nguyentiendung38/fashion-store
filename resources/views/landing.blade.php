@@ -4,7 +4,7 @@
 
 @section('content')
 <!-- ===== HERO BANNER - GIỚI THIỆU ===== -->
-<section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-pink-900 to-rose-900 pt-28 md:pt-32">
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-white pt-28 md:pt-32">
     <!-- Background Animation -->
     <div class="absolute inset-0 opacity-20">
         <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
@@ -15,23 +15,23 @@
     <div class="container mx-auto px-6 relative z-10">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
             <!-- Text Content -->
-            <div class="text-white space-y-8">
+            <div class="text-slate-900 space-y-8">
                 <div class="inline-block">
-                    <span class="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold flex items-center gap-2 w-fit">
-                        <span class="w-2 h-2 bg-pink-400 rounded-full animate-pulse"></span>
+                    <span class="px-4 py-2 bg-slate-100 border border-slate-300 rounded-full text-sm font-semibold flex items-center gap-2 w-fit text-slate-900">
+                        <span class="w-2 h-2 bg-black-400 rounded-full animate-pulse"></span>
                         New Collection 2024
                     </span>
                 </div>
 
                 <h1 class="text-5xl md:text-7xl font-bold leading-tight">
                     Định Nghĩa Lại
-                    <span class="block bg-gradient-to-r from-pink-300 via-rose-300 to-purple-300 bg-clip-text text-transparent">
+                    <span class="block text-black-600">
                         Phong Cách
                     </span>
                     Của Bạn
                 </h1>
 
-                <p class="text-lg md:text-xl text-slate-300 leading-relaxed max-w-xl">
+                <p class="text-lg md:text-xl text-slate-700 leading-relaxed max-w-xl">
                     Khám phá bộ sưu tập thời trang nữ cao cấp, nơi sự thanh lịch gặp gỡ hiện đại.
                     Mỗi thiết kế là một tác phẩm nghệ thuật, tôn vinh vẻ đẹp tự nhiên của bạn.
                 </p>
@@ -51,22 +51,22 @@
                 <!-- Animated Stats -->
                 <div class="grid grid-cols-3 gap-6 pt-8 border-t border-white/20">
                     <div class="stat-item">
-                        <div class="text-3xl font-bold text-pink-300">
+                        <div class="text-3xl font-bold text-black-300">
                             <span class="counter" data-target="10000">0</span>+
                         </div>
-                        <div class="text-sm text-slate-400 mt-1">Khách Hàng</div>
+                        <div class="text-sm text-black-400 mt-1">Khách Hàng</div>
                     </div>
                     <div class="stat-item">
-                        <div class="text-3xl font-bold text-rose-300">
+                        <div class="text-3xl font-bold text-black-300">
                             <span class="counter" data-target="500">0</span>+
                         </div>
-                        <div class="text-sm text-slate-400 mt-1">Sản Phẩm</div>
+                        <div class="text-sm text-black-400 mt-1">Sản Phẩm</div>
                     </div>
                     <div class="stat-item">
-                        <div class="text-3xl font-bold text-purple-300">
+                        <div class="text-3xl font-bold text-black-300">
                             <span class="counter" data-target="4.9">0</span>★
                         </div>
-                        <div class="text-sm text-slate-400 mt-1">Đánh Giá</div>
+                        <div class="text-sm text-black-400 mt-1">Đánh Giá</div>
                     </div>
                 </div>
             </div>
@@ -194,7 +194,7 @@
                 Tại sao chọn chúng tôi
             </span>
             <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
-                Trải Nghiệm Mua Sắm <span class="gradient-text">Hoàn Hảo</span>
+                Trải Nghiệm Mua Sắm <span class="gradient-text-black">Hoàn Hảo</span>
             </h2>
             <p class="mt-4 text-lg text-slate-600 leading-relaxed">
                 Chúng tôi cam kết mang đến dịch vụ tốt nhất cho khách hàng
@@ -242,11 +242,11 @@
 <section class="py-20 md:py-32 bg-white">
     <div class="container mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto mb-16">
-            <span class="inline-block px-4 py-2 bg-pink-100 text-pink-600 rounded-full text-sm font-semibold mb-4">
+            <span class="inline-block px-4 py-2 bg-pink-100 text-black-600 rounded-full text-sm font-semibold mb-4">
                 Danh mục
             </span>
             <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
-                Mua Sắm Theo <span class="gradient-text">Phong Cách</span>
+                Mua Sắm Theo <span class="gradient-text-black">Phong Cách</span>
             </h2>
             <p class="mt-4 text-lg text-slate-600 leading-relaxed">
                 Tìm kiếm sản phẩm phù hợp với phong cách và nhu cầu của bạn
@@ -402,11 +402,11 @@
     <div class="container mx-auto px-6">
         <!-- Tiêu đề -->
         <div class="text-center max-w-2xl mx-auto mb-16">
-            <span class="inline-block px-4 py-2 bg-pink-100 text-pink-600 rounded-full text-sm font-semibold mb-4">
+            <span class="inline-block px-4 py-2 bg-pink-100 text-black-600 rounded-full text-sm font-semibold mb-4">
                 Lookbook
             </span>
             <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
-                Bộ Sưu Tập <span class="gradient-text">Thu Đông 2024</span>
+                Bộ Sưu Tập <span class="gradient-text-black">Thu Đông 2024</span>
             </h2>
             <p class="mt-4 text-lg text-slate-600 leading-relaxed">
                 Khám phá phong cách thời trang mới nhất từ lynlydesign Fashion
@@ -589,8 +589,8 @@
 <!-- TESTIMONIALS SECTION -->
 <section class="py-20 md:py-32 bg-gradient-to-b from-white to-slate-50">
     <div class="container mx-auto px-6">
-        <div class="text-center max-w-2xl mx-auto mb-16"> <span class="inline-block px-4 py-2 bg-pink-100 text-pink-600 rounded-full text-sm font-semibold mb-4"> Đánh giá khách hàng </span>
-            <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900"> Khách Hàng <span class="gradient-text">Nói Gì</span> </h2>
+        <div class="text-center max-w-2xl mx-auto mb-16"> <span class="inline-block px-4 py-2 bg-pink-100 text-black-600 rounded-full text-sm font-semibold mb-4"> Đánh giá khách hàng </span>
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900"> Khách Hàng <span class="gradient-text-black">Nói Gì</span> </h2>
             <p class="mt-4 text-lg text-slate-600 leading-relaxed"> Hơn 10,000+ khách hàng hài lòng với sản phẩm và dịch vụ của chúng tôi </p>
         </div>
         <div class="grid md:grid-cols-3 gap-8"> <!-- Testimonial 1 -->
@@ -627,20 +627,20 @@
         </div> <!-- Stats -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-slate-200">
             <div class="text-center">
-                <div class="text-4xl font-bold gradient-text mb-2">10K+</div>
-                <p class="text-slate-600">Khách hàng</p>
+                <div class="text-4xl font-bold gradient-text-black mb-2">10K+</div>
+                <p class="text-black-600">Khách hàng</p>
             </div>
             <div class="text-center">
-                <div class="text-4xl font-bold gradient-text mb-2">500+</div>
-                <p class="text-slate-600">Sản phẩm</p>
+                <div class="text-4xl font-bold gradient-text-black mb-2">500+</div>
+                <p class="text-black-600">Sản phẩm</p>
             </div>
             <div class="text-center">
-                <div class="text-4xl font-bold gradient-text mb-2">4.9/5</div>
-                <p class="text-slate-600">Đánh giá</p>
+                <div class="text-4xl font-bold gradient-text-black mb-2">4.9/5</div>
+                <p class="text-black-600">Đánh giá</p>
             </div>
             <div class="text-center">
-                <div class="text-4xl font-bold gradient-text mb-2">100%</div>
-                <p class="text-slate-600">Hài lòng</p>
+                <div class="text-4xl font-bold gradient-text-black mb-2">100%</div>
+                <p class="text-black-600">Hài lòng</p>
             </div>
         </div>
     </div>
@@ -649,11 +649,11 @@
 <section class="py-20 md:py-32 bg-gradient-to-b from-white to-pink-50/30">
     <div class="container mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto mb-16">
-            <span class="inline-block px-4 py-2 bg-pink-100 text-pink-600 rounded-full text-sm font-semibold mb-4">
+            <span class="inline-block px-4 py-2 bg-pink-100 text-black-600 rounded-full text-sm font-semibold mb-4">
                 @lynlydesign
             </span>
             <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
-                Khách Hàng <span class="gradient-text">Yêu Thích</span>
+                Khách Hàng <span class="gradient-text-black">Yêu Thích</span>
             </h2>
             <p class="mt-4 text-lg text-slate-600 leading-relaxed">
                 Cảm ơn các nàng đã tin tưởng và đồng hành cùng Lynlydesign Fashion
@@ -679,7 +679,7 @@
         <div class="text-center mt-10">
             <a href="https://www.instagram.com/lynlydesign?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 target="_blank"
-                class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold py-3 px-8 rounded-lg hover:shadow-lg transition-all">
+                class="inline-flex items-center gap-2 bg-gradient-to-r  text-black font-semibold py-3 px-8 rounded-lg hover:shadow-lg transition-all">
                 <i class="fab fa-instagram text-xl"></i>
                 Theo dõi lynlydesign
             </a>
@@ -770,11 +770,11 @@
 <section class="py-20 md:py-32 bg-white">
     <div class="container mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto mb-16">
-            <span class="inline-block px-4 py-2 bg-pink-100 text-pink-600 rounded-full text-sm font-semibold mb-4">
+            <span class="inline-block px-4 py-2 bg-pink-100 text-black-600 rounded-full text-sm font-semibold mb-4">
                 Câu hỏi thường gặp
             </span>
             <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
-                Giải Đáp <span class="gradient-text">Thắc Mắc</span>
+                Giải Đáp <span class="gradient-text-black">Thắc Mắc</span>
             </h2>
             <p class="mt-4 text-lg text-slate-600 leading-relaxed">
                 Những câu hỏi khách hàng thường gặp khi mua sắm tại Lynlydesign Fashion
