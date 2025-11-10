@@ -59,32 +59,30 @@
     </div>
 
     <div id="mobile-menu" class="md:hidden fixed inset-x-0 top-20 bg-white/95 backdrop-blur-lg border-b border-slate-200 shadow-2xl transform -translate-y-[110%] opacity-0 transition-all duration-500 ease-out max-h-[calc(100vh-5rem)] overflow-y-auto">
-        <nav class="container mx-auto px-6 py-6 space-y-2" aria-label="Mobile Navigation">
-            <a href="{{ route('home') }}" class="mobile-nav-link flex items-center justify-between px-4 py-3 text-slate-700 font-medium text-lg rounded-xl hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all duration-300 group">
-                <span class="group-hover:text-pink-600">Trang chủ</span>
+    <nav class="container mx-auto px-6 py-6 space-y-2" aria-label="Mobile Navigation">
+        <a href="{{ route('home') }}" class="mobile-nav-link flex items-center justify-between px-4 py-3 text-black font-medium text-lg rounded-xl hover:bg-gray-100 transition-all duration-300">
+            Trang chủ
+        </a>
+        <a href="{{ route('about') }}" class="mobile-nav-link flex items-center justify-between px-4 py-3 text-black font-medium text-lg rounded-xl hover:bg-gray-100 transition-all duration-300">
+            Giới thiệu
+        </a>
+        <a href="{{ route('collections.page') }}" class="mobile-nav-link flex items-center justify-between px-4 py-3 text-black font-medium text-lg rounded-xl hover:bg-gray-100 transition-all duration-300">
+            Váy đầm
+        </a>
+        <a href="{{ route('hottrend.page') }}" class="mobile-nav-link flex items-center justify-between px-4 py-3 text-black font-medium text-lg rounded-xl hover:bg-gray-100 transition-all duration-300">
+            Hot Trend
+        </a>
+        <a href="{{ route('contact.page') }}" class="mobile-nav-link flex items-center justify-between px-4 py-3 text-black font-medium text-lg rounded-xl hover:bg-gray-100 transition-all duration-300">
+            Liên hệ
+        </a>
+        <div class="pt-4 mt-4 border-t border-slate-200">
+            <a href="https://zalo.me/0769223338" target="_blank" class="flex items-center justify-center gap-2 w-full bg-black text-white font-semibold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                Tư vấn Zalo
             </a>
-            <a href="{{ route('about') }}" class="mobile-nav-link flex items-center justify-between px-4 py-3 text-slate-700 font-medium text-lg rounded-xl hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all duration-300 group">
-                <span class="group-hover:text-pink-600">Giới thiệu</span>
-            </a>
-            <a href="{{ route('collections.page') }}" class="mobile-nav-link flex items-center justify-between px-4 py-3 text-slate-700 font-medium text-lg rounded-xl hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all duration-300 group">
-                <span class="group-hover:text-pink-600">Váy đầm</span>
-            </a>
-            <a href="{{ route('hottrend.page') }}" class="mobile-nav-link flex items-center justify-between px-4 py-3 text-slate-700 font-medium text-lg rounded-xl hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all duration-300 group">
-                <span class="flex items-center gap-2 group-hover:text-pink-600">
-                    Hot Trend
-                    <span class="px-2 py-0.5 text-xs font-bold text-white bg-gradient-to-r from-orange-500 to-red-500 rounded-full">HOT</span>
-                </span>
-            </a>
-            <a href="{{ route('contact.page') }}" class="mobile-nav-link flex items-center justify-between px-4 py-3 text-slate-700 font-medium text-lg rounded-xl hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all duration-300 group">
-                <span class="group-hover:text-pink-600">Liên hệ</span>
-            </a>
-            <div class="pt-4 mt-4 border-t border-slate-200">
-                <a href="https://zalo.me/0769223338" target="_blank" class="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-pink-600 to-rose-600 text-white font-semibold py-3 px-6 rounded-xl shadow-lg shadow-pink-500/30 hover:shadow-xl transition-all duration-300 group">
-                    <span>Tư vấn Zalo</span>
-                </a>
-            </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
+</div>
+
 </header>
 
 @if(isset($scrollToSection) && $scrollToSection)
