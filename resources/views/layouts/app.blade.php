@@ -90,7 +90,7 @@
     @stack('styles')
 </head>
 
-<body class="font-sans bg-background text-primary antialiased">
+<body class="font-['Times_New_Roman',_serif]">
     {{-- Header --}}
     @include('partials.header')
 

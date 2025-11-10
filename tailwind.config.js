@@ -6,7 +6,12 @@ export default {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        // Thêm font Times New Roman
+        times: ['"Times New Roman"', 'serif'],
+      },
+    },
   },
   plugins: [],
 }
