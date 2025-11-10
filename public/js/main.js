@@ -35,21 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // === VIDEO OVERLAY PLAY ===
-    const lookbookVideo = document.getElementById('lookbook-video');
-    const videoOverlay = document.getElementById('video-overlay');
-
-    if (lookbookVideo && videoOverlay) {
-        videoOverlay.addEventListener('click', () => {
-            if (lookbookVideo.paused) {
-                lookbookVideo.muted = false;
-                lookbookVideo.play();
-                videoOverlay.style.display = 'none';
-            }
-        });
-        console.log('✅ Video player initialized');
-    }
-
     // === SWIPER SLIDER: COLLECTIONS ===
     const collectionsWrapper = document.querySelector('.collections-swiper .swiper-wrapper');
     if (collectionsWrapper && collectionsWrapper.children.length > 0) {
