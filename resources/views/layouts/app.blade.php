@@ -121,6 +121,8 @@
     {{-- Main JavaScript --}}
     <script src="{{ asset('js/main.js') }}"></script>
     <script src="{{ asset('js/menu.js') }}" defer></script>
+    <script src="{{ asset('js/lookbook-video.js') }}"></script>
+
 
     {{-- Core Scripts --}}
     <script>

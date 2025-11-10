@@ -4,64 +4,10 @@
 
 @section('content')
 
-<section class="py-20 md:py-32 bg-gradient-to-b from-white to-pink-50/30">
-    <div class="container mx-auto px-6">
-        <div class="text-center max-w-2xl mx-auto mb-12 md:mb-16">
-            <span class="inline-block px-4 py-2 bg-pink-100 text-pink-600 rounded-full text-sm font-semibold mb-4">
-                Tại sao chọn chúng tôi
-            </span>
-            <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
-                Trải Nghiệm Mua Sắm <span class="gradient-text-black">Hoàn Hảo</span>
-            </h2>
-            <p class="mt-4 text-lg text-slate-600 leading-relaxed">
-                Chúng tôi cam kết mang đến dịch vụ tốt nhất cho khách hàng
-            </p>
-        </div>
-
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 md:gap-8">
-
-            <div class="feature-card group bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100">
-                <div class="feature-icon w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-pink-500 to-rose-500 rounded-2xl flex items-center justify-center mb-5 shadow-lg shadow-pink-500/30">
-                    <i class="fas fa-gem text-white text-xl md:text-2xl"></i>
-                </div>
-                <h3 class="text-lg md:text-xl font-bold text-slate-900 mb-2">Chất Lượng Cao Cấp</h3>
-                <p class="text-slate-600 leading-relaxed text-sm md:text-base">100% vải nhập khẩu, đường may tỉ mỉ, kiểm tra chất lượng nghiêm ngặt.</p>
-            </div>
-
-            <div class="feature-card group bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100">
-                <div class="feature-icon w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-5 shadow-lg shadow-purple-500/30">
-                    <i class="fas fa-shipping-fast text-white text-xl md:text-2xl"></i>
-                </div>
-                <h3 class="text-lg md:text-xl font-bold text-slate-900 mb-2">Giao Hàng Nhanh</h3>
-                <p class="text-slate-600 leading-relaxed text-sm md:text-base">Giao hàng toàn quốc 2-3 ngày. Miễn phí ship đơn hàng từ 500K.</p>
-            </div>
-
-            <div class="feature-card group bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100">
-                <div class="feature-icon w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mb-5 shadow-lg shadow-orange-500/30">
-                    <i class="fas fa-sync-alt text-white text-xl md:text-2xl"></i>
-                </div>
-                <h3 class="text-lg md:text-xl font-bold text-slate-900 mb-2">Đổi Trả 7 Ngày</h3>
-                <p class="text-slate-600 leading-relaxed text-sm md:text-base">Chính sách đổi trả linh hoạt nếu có lỗi từ nhà sản xuất.</p>
-            </div>
-
-            <div class="feature-card group bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100">
-                <div class="feature-icon w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-5 shadow-lg shadow-blue-500/30">
-                    <i class="fas fa-headset text-white text-xl md:text-2xl"></i>
-                </div>
-                <h3 class="text-lg md:text-xl font-bold text-slate-900 mb-2">Tư Vấn 24/7</h3>
-                <p class="text-slate-600 leading-relaxed text-sm md:text-base">Đội ngũ stylist chuyên nghiệp sẵn sàng tư vấn qua Zalo.</p>
-            </div>
-
-        </div>
-    </div>
-</section>
 <!-- ===== MỚI: CATEGORIES SECTION ===== -->
 <section class="py-20 md:py-32 bg-white">
     <div class="container mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto mb-16">
-            <span class="inline-block px-4 py-2 bg-pink-100 text-black-600 rounded-full text-sm font-semibold mb-4">
-                Danh mục
-            </span>
             <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
                 Mua Sắm Theo <span class="gradient-text-black">Phong Cách</span>
             </h2>
@@ -219,9 +165,6 @@
     <div class="container mx-auto px-6">
         <!-- Tiêu đề -->
         <div class="text-center max-w-2xl mx-auto mb-16">
-            <span class="inline-block px-4 py-2 bg-pink-100 text-black-600 rounded-full text-sm font-semibold mb-4">
-                Lookbook
-            </span>
             <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
                 Bộ Sưu Tập <span class="gradient-text-black">Thu Đông 2024</span>
             </h2>
@@ -234,21 +177,22 @@
         <div class="grid md:grid-cols-2 gap-6 items-stretch">
             <!-- Video chính -->
             @if($lookbookVideo)
-            <div class="relative rounded-2xl overflow-hidden group cursor-pointer">
+            <div class="relative rounded-2xl overflow-hidden group cursor-pointer" onclick="toggleVideoPlay(this)">
                 <video loop playsinline class="w-full h-full object-cover">
                     <source src="{{ asset('storage/' . $lookbookVideo->media_path) }}" type="video/mp4">
                     Trình duyệt của bạn không hỗ trợ video.
                 </video>
 
-                <div class="absolute inset-0 flex items-center justify-center bg-black/40 transition-all">
+                <!-- Overlay (nút play) -->
+                <div class="overlay absolute inset-0 flex items-center justify-center bg-black/40 transition-all">
                     <div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center">
-                        <i class="fas fa-play text-pink-600 text-2xl ml-1"></i>
+                        <i class="fas fa-play text-black text-3xl ml-1"></i>
                     </div>
                 </div>
 
                 <div class="absolute bottom-0 left-0 right-0 p-8 text-white bg-gradient-to-t from-black/70 via-black/30 to-transparent z-10">
                     <h3 class="text-2xl font-bold mb-2">{{ $lookbookVideo->title }}</h3>
-                    <p class="text-sm opacity-90">{{ $lookbookVideo->description }}</p>
+                    <p class="text-base opacity-90">{{ $lookbookVideo->description }}</p>
                 </div>
             </div>
             @endif
@@ -259,10 +203,11 @@
                 <div class="relative rounded-2xl overflow-hidden group">
                     <img src="{{ asset('storage/' . $image->media_path) }}" alt="{{ $image->title }}"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                         <div class="absolute bottom-0 p-6 text-white">
-                            <h4 class="font-bold text-lg">{{ $image->title }}</h4>
-                            <p class="text-sm">{{ $image->description }}</p>
+                            <h4 class="font-bold text-xl">{{ $image->title }}</h4>
+                            <p class="text-base">{{ $image->description }}</p>
                         </div>
                     </div>
                 </div>
@@ -271,8 +216,6 @@
         </div>
     </div>
 </section>
-
-
 
 <section id="hot-trend" class="py-20 md:py-32 bg-white">
     <div class="container mx-auto px-6">
@@ -363,53 +306,12 @@
         </div>
     </div>
 </section>
-<div class="bg-white border-y border-slate-200/60">
-    <div class="container mx-auto px-6 py-12 md:py-16">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-6">
 
-            <div class="flex flex-col items-center text-center group">
-                <div class="text-4xl text-slate-400 mb-4 transition-colors duration-300 group-hover:text-pink-500">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-                <h4 class="font-semibold text-slate-800 mb-1">Thanh Toán An Toàn</h4>
-                <p class="text-sm text-slate-500">Hỗ trợ VISA, Mastercard & COD</p>
-            </div>
-
-            <div class="flex flex-col items-center text-center group">
-                <div class="text-4xl text-slate-400 mb-4 transition-colors duration-300 group-hover:text-purple-500">
-                    <i class="fas fa-truck-fast"></i>
-                </div>
-                <h4 class="font-semibold text-slate-800 mb-1">Vận Chuyển Toàn Quốc</h4>
-                <p class="text-sm text-slate-500">Giao hàng nhanh từ 2-3 ngày</p>
-            </div>
-
-            <div class="flex flex-col items-center text-center group">
-                <div class="text-4xl text-slate-400 mb-4 transition-colors duration-300 group-hover:text-rose-500">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <h4 class="font-semibold text-slate-800 mb-1">Chứng Nhận Chất Lượng</h4>
-                <p class="text-sm text-slate-500">Sản phẩm cao cấp, tuyển chọn</p>
-            </div>
-
-            <div class="flex flex-col items-center text-center group">
-                <div class="text-4xl text-slate-400 mb-4 transition-colors duration-300 group-hover:text-cyan-500">
-                    <i class="fas fa-headset"></i>
-                </div>
-                <h4 class="font-semibold text-slate-800 mb-1">Hỗ Trợ 24/7</h4>
-                <p class="text-sm text-slate-500">Tư vấn chuyên nghiệp qua Zalo</p>
-            </div>
-
-        </div>
-    </div>
-</div>
 
 @if($instagramBanners->count() > 0)
 <section class="py-20 md:py-32 bg-gradient-to-b from-white to-pink-50/30">
     <div class="container mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto mb-16">
-            <span class="inline-block px-4 py-2 bg-pink-100 text-black-600 rounded-full text-sm font-semibold mb-4">
-                @lynlydesign
-            </span>
             <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
                 Khách Hàng <span class="gradient-text-black">Yêu Thích</span>
             </h2>

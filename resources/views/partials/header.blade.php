@@ -11,28 +11,28 @@
 
             <nav class="hidden md:flex items-center space-x-1" aria-label="Main Navigation">
                 <a href="{{ route('home') }}" class="nav-link group relative px-4 py-2 text-slate-700 font-medium text-lg transition-all duration-300">
-                    <span class="relative z-10 group-hover:text-pink-600">Trang chủ</span>
+                    <span class="relative z-10 group-hover:text-black-600">Trang chủ</span>
                     <div class="absolute inset-0 bg-pink-50 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                     <div class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-pink-600 to-purple-600 group-hover:w-1/2 transition-all duration-300"></div>
                 </a>
                 <a href="{{ route('about') }}" class="nav-link group relative px-4 py-2 text-slate-700 font-medium text-lg transition-all duration-300">
-                    <span class="relative z-10 group-hover:text-pink-600">Giới thiệu</span>
+                    <span class="relative z-10 group-hover:text-black-600">Giới thiệu</span>
                     <div class="absolute inset-0 bg-pink-50 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                     <div class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-pink-600 to-purple-600 group-hover:w-1/2 transition-all duration-300"></div>
                 </a>
                 <a href="{{ route('collections.page') }}" class="nav-link group relative px-4 py-2 text-slate-700 font-medium text-lg transition-all duration-300">
-                    <span class="relative z-10 group-hover:text-pink-600">Váy đầm</span>
+                    <span class="relative z-10 group-hover:text-black-600">Váy đầm</span>
                     <div class="absolute inset-0 bg-pink-50 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                     <div class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-pink-600 to-purple-600 group-hover:w-1/2 transition-all duration-300"></div>
                 </a>
                 <a href="{{ route('hottrend.page') }}" class="nav-link group relative px-4 py-2 text-slate-700 font-medium text-lg transition-all duration-300">
-                    <span class="relative z-10 group-hover:text-pink-600">Hot Trend</span>
+                    <span class="relative z-10 group-hover:text-black-600">Hot Trend</span>
                     <div class="absolute inset-0 bg-pink-50 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                     <span class="absolute -top-1 -right-1 px-1.5 py-0.5 text-[10px] font-bold text-white bg-gradient-to-r from-orange-500 to-red-500 rounded-full animate-pulse">HOT</span>
                     <div class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-pink-600 to-purple-600 group-hover:w-1/2 transition-all duration-300"></div>
                 </a>
                 <a href="{{ route('contact.page') }}" class="nav-link group relative px-4 py-2 text-slate-700 font-medium text-lg transition-all duration-300">
-                    <span class="relative z-10 group-hover:text-pink-600">Liên hệ</span>
+                    <span class="relative z-10 group-hover:text-black-600">Liên hệ</span>
                     <div class="absolute inset-0 bg-pink-50 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                     <div class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-pink-600 to-purple-600 group-hover:w-1/2 transition-all duration-300"></div>
                 </a>
@@ -49,9 +49,9 @@
 
                 <button id="hamburger-button" class="md:hidden group relative p-2 focus:outline-none">
                     <div class="flex flex-col justify-between w-6 h-5 transform transition-all duration-300 origin-center overflow-hidden">
-                        <span class="bg-gradient-to-r from-pink-600 to-purple-600 h-0.5 w-7 transform transition-all duration-300 origin-left group-[.active]:rotate-45 group-[.active]:translate-x-[3px] group-[.active]:translate-y-[-1px]"></span>
-                        <span class="bg-gradient-to-r from-pink-600 to-purple-600 h-0.5 w-7 rounded transform transition-all duration-300 group-[.active]:opacity-0 group-[.active]:translate-x-3"></span>
-                        <span class="bg-gradient-to-r from-pink-600 to-purple-600 h-0.5 w-7 transform transition-all duration-300 origin-left group-[.active]:-rotate-45 group-[.active]:translate-x-[3px] group-[.active]:translate-y-[1px]"></span>
+                        <span class="bg-black h-0.5 w-7 transform transition-all duration-300 origin-left group-[.active]:rotate-45 group-[.active]:translate-x-[3px] group-[.active]:translate-y-[-1px]"></span>
+                        <span class="bg-black h-0.5 w-7 rounded transform transition-all duration-300 group-[.active]:opacity-0 group-[.active]:translate-x-3"></span>
+                        <span class="bg-black h-0.5 w-7 transform transition-all duration-300 origin-left group-[.active]:-rotate-45 group-[.active]:translate-x-[3px] group-[.active]:translate-y-[1px]"></span>
                     </div>
                 </button>
             </div>
