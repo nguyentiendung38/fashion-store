@@ -113,9 +113,10 @@
                                 </a>
                             </div>
                             @if($hasDiscount)
-                            <span class="absolute top-0 left-0 bg-rose-500 text-white text-sm font-bold px-4 py-2 rounded-br-lg shadow-lg">
+                            <span class="absolute top-0 left-0 bg-white text-black text-sm font-bold px-4 py-2 rounded-br-lg shadow-md border border-gray-300">
                                 -{{ $discount }}%
                             </span>
+
                             @endif
                         </div>
                         <div class="p-5 text-left">
@@ -124,7 +125,7 @@
                             </h3>
                             <div class="mt-2 flex items-baseline gap-2">
                                 @if($hasDiscount)
-                                <span class="text-xl font-bold text-rose-500">
+                                <span class="text-xl font-bold text-black-500">
                                     {{ number_format($finalPrice, 0, ',', '.') }}đ
                                 </span>
                                 <span class="text-sm text-gray-400 line-through">
@@ -139,11 +140,12 @@
                             <!-- ✅ Nút Xem Chi Tiết -->
                             <div class="mt-4">
                                 <a href="{{ route('collections.show', $collection) }}" class="block">
-                                    <span class="inline-block bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-5 rounded-full transition-all duration-300">
+                                    <span class="inline-block bg-white text-black border border-gray-300 hover:bg-black hover:text-white font-semibold py-2 px-5 rounded-full transition-all duration-300">
                                         Xem Chi Tiết
                                     </span>
                                 </a>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -255,7 +257,7 @@
                                 </a>
                             </div>
                             @if($hasDiscount)
-                            <span class="absolute top-0 left-0 bg-rose-500 text-white text-sm font-bold px-4 py-2 rounded-br-lg shadow-lg">
+                            <span class="absolute top-0 left-0 bg-white text-black text-sm font-bold px-4 py-2 rounded-br-lg shadow-md border border-gray-300">
                                 -{{ $discount }}%
                             </span>
                             @endif
@@ -268,7 +270,7 @@
 
                             <div class="mt-2 flex items-baseline gap-2">
                                 @if($hasDiscount)
-                                <span class="text-xl font-bold text-rose-500">
+                                <span class="text-xl font-bold text-black-500">
                                     {{ number_format($finalPrice, 0, ',', '.') }}đ
                                 </span>
                                 <span class="text-sm text-gray-400 line-through">
@@ -283,11 +285,12 @@
                             <!-- ✅ Nút Xem Chi Tiết -->
                             <div class="mt-4">
                                 <a href="{{ route('products.show', $hotTrend) }}" class="block">
-                                    <span class="inline-block bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-5 rounded-full transition-all duration-300">
+                                    <span class="inline-block bg-white text-black border border-gray-300 hover:bg-black hover:text-white font-semibold py-2 px-5 rounded-full transition-all duration-300">
                                         Xem Chi Tiết
                                     </span>
                                 </a>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -350,7 +353,7 @@
 <section class="py-20 md:py-32 bg-gradient-to-b from-white to-pink-50/30">
     <div class="container mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto mb-16">
-            <span class="inline-block px-4 py-2 bg-pink-100 text-pink-600 rounded-full text-sm font-semibold mb-4">
+            <span class="inline-block px-4 py-2 bg-pink-100 text-black-600 rounded-full text-sm font-semibold mb-4">
                 @lynlydesign
             </span>
             <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">

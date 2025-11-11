@@ -5,7 +5,7 @@
         <div class="flex justify-between items-center h-20">
 
             <a href="{{ url('/') }}" class="text-3xl font-bold text-black hover:text-gray-800 transition-all duration-300">
-                Lynlydesign
+                LynlyDesign
             </a>
 
 

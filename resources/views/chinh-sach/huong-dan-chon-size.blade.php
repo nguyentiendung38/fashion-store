@@ -605,7 +605,7 @@
                             Đừng lo! Đội ngũ stylist của chúng tôi sẵn sàng tư vấn size miễn phí dựa trên số đo của bạn
                         </p>
                         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a href="https://zalo.me/0769223338" target="_blank" class="inline-flex items-center justify-center gap-3 bg-white text-pink-600 font-bold py-4 px-8 rounded-xl hover:bg-gray-100 transition-all shadow-lg">
+                            <a href="https://zalo.me/0769223338" target="_blank" class="inline-flex items-center justify-center gap-3 bg-white tex-black-600 font-bold py-4 px-8 rounded-xl hover:bg-gray-100 transition-all shadow-lg">
                                 <i class="fas fa-comments text-xl"></i>
                                 <span>Chat qua Zalo ngay</span>
                             </a>

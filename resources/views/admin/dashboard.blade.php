@@ -65,7 +65,7 @@
                         <path d="M16 11.37a4 4 0 11-4-4 4 4 0 014 4z"></path>
                         <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
                     </svg>
-                    <span>Banner Instagram</span>
+                    <span>Banner KH Yêu Thích</span>
                 </a>
 
 
